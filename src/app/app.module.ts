@@ -11,10 +11,7 @@ import { CoreModule } from './core.module';
 import * as fromApp from './store/app.reducer';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -23,7 +20,8 @@ import * as fromApp from './store/app.reducer';
     SharedModule,
     CoreModule
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
+  // providers: [LoggingService]
 })
-
 export class AppModule {}
+
